@@ -19,7 +19,7 @@ fun RandomColorBox(item: ListItem) {
             .fillMaxWidth()
             .height(item.height)
             .clip(RoundedCornerShape(10.dp))
-            .background(item.color)
+            .background(item.color),
     )
 
 }

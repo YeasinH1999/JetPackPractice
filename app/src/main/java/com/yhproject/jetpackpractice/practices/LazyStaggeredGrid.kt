@@ -1,5 +1,3 @@
-@file:OptIn(ExperimentalFoundationApi::class)
-
 package com.yhproject.jetpackpractice.practices
 
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -17,6 +15,7 @@ import com.yhproject.jetpackpractice.components.RandomColorBox
 import com.yhproject.jetpackpractice.models.ListItem
 import kotlin.random.Random
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun LazyStaggeredGrid() {
 
@@ -35,6 +34,7 @@ fun LazyStaggeredGrid() {
         contentPadding = PaddingValues(16.dp),
         horizontalArrangement = Arrangement.spacedBy(16.dp),
         verticalItemSpacing = 16.dp,
+
     ){
 
         items(items){
